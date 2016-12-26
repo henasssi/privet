@@ -1,0 +1,9 @@
+AddDefaultCharset UTF-8
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^www.binatrader\.ru$ [NC]
+
+RewriteRule ^(.*)$ http://binatrader.ru/$1 [R=301,L]
